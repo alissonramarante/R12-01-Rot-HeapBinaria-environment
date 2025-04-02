@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: adt.heap.StudentMaxHeapTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.151 s <<< FAILURE! -- in adt.heap.StudentMaxHeapTest
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.162 s <<< FAILURE! -- in adt.heap.StudentMaxHeapTest
 adt.heap.StudentMaxHeapTest.testBuild -- Time elapsed: 0.021 s <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 8
 	at adt.heap.HeapImpl.heapify(HeapImpl.java:96)

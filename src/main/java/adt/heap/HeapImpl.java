@@ -130,7 +130,7 @@ public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
 		if (array != null) {
 			this.heap = array;
 			this.index = array.length - 1;
-			for (int i = this.index / 2; i >= 0; i--) {
+			for (int i = this.index / 2; i >= 1; --i) {
 				this.heapify(i);
 			}
 		}

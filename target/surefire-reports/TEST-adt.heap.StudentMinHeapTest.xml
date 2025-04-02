@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/alisson.amarante/Downloads/Cadeiras Cursando/LEDA - Adalberto/R12-01-Rot-HeapBinaria-environment/target/surefire/surefirebooter-20250402095131754_3.jar /home/alisson.amarante/Downloads/Cadeiras Cursando/LEDA - Adalberto/R12-01-Rot-HeapBinaria-environment/target/surefire 2025-04-02T09-51-31_528-jvmRun1 surefire-20250402095131754_1tmp surefire_0-20250402095131754_2tmp"/>
+    <property name="sun.java.command" value="/home/alisson.amarante/Downloads/Cadeiras Cursando/LEDA - Adalberto/R12-01-Rot-HeapBinaria-environment/target/surefire/surefirebooter-20250402100149482_3.jar /home/alisson.amarante/Downloads/Cadeiras Cursando/LEDA - Adalberto/R12-01-Rot-HeapBinaria-environment/target/surefire 2025-04-02T10-01-49_119-jvmRun1 surefire-20250402100149482_1tmp surefire_0-20250402100149482_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/alisson.amarante/Downloads/Cadeiras Cursando/LEDA - Adalberto/R12-01-Rot-HeapBinaria-environment/target/test-classes:/home/alisson.amarante/Downloads/Cadeiras Cursando/LEDA - Adalberto/R12-01-Rot-HeapBinaria-environment/target/classes:/home/alisson.amarante/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/home/alisson.amarante/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/alisson.amarante/Downloads/Cadeiras Cursando/LEDA - Adalberto/R12-01-Rot-HeapBinaria-environment/target/surefire/surefirebooter-20250402095131754_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/alisson.amarante/Downloads/Cadeiras Cursando/LEDA - Adalberto/R12-01-Rot-HeapBinaria-environment/target/surefire/surefirebooter-20250402100149482_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+7-Ubuntu-1ubuntu224.04"/>
     <property name="user.name" value="alisson.amarante"/>
@@ -125,7 +125,7 @@
 ]]></error>
   </testcase>
   <testcase name="testInsert" classname="adt.heap.StudentMinHeapTest" time="0.0"/>
-  <testcase name="testRemove" classname="adt.heap.StudentMinHeapTest" time="0.001">
+  <testcase name="testRemove" classname="adt.heap.StudentMinHeapTest" time="0.0">
     <failure message="expected:&lt;17&gt; but was:&lt;40&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<17> but was:<40>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)

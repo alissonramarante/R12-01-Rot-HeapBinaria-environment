@@ -11,8 +11,9 @@ import util.Util;
  * heapify dessa heap deve comparar os elementos e colocar o menor sempre no
  * topo. Ou seja, admitindo um comparador normal (responde corretamente 2 < 3),
  * essa heap deixa os elementos menores no topo. Essa comparação não é feita
- * diretamente com os elementos armazenados, mas sim usando um comparator. 
- * Dessa forma, dependendo do comparator, a heap pode funcionar como uma max-heap 
+ * diretamente com os elementos armazenados, mas sim usando um comparator.
+ * Dessa forma, dependendo do comparator, a heap pode funcionar como uma
+ * max-heap
  * ou min-heap.
  */
 public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
@@ -74,7 +75,7 @@ public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
 		for (int i = 0; i <= this.index; i++) {
 			resp.add(this.heap[i]);
 		}
-		return (T[])resp.toArray(new Comparable[0]);
+		return (T[]) resp.toArray(new Comparable[0]);
 	}
 
 	// ///////////// METODOS A IMPLEMENTAR
@@ -84,22 +85,21 @@ public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
 	 * para subir os elementos na heap.
 	 */
 	private void heapify(int position) {
+
 		if (position >= 0 && position < this.size()) {
+			int largest = position;
 			int left = left(position);
 			int right = right(position);
-			int largest;
-			if (left <= this.size() && heap[left].compareTo(heap[position]) > 0 ) {
-				largest = left;				
-			} else{
-				largest = position;
+			if (left <= this.index && comparator.compare(this.getHeap()[left], this.getHeap()[position]) > 0) {
+				largest = left;
 			}
-			if(right <= this.size() && heap[right].compareTo(heap[largest]) > 0){
+			if (right <= this.index && comparator.compare(this.getHeap()[right], this.getHeap()[largest]) > 0) {
 				largest = right;
 			}
-			 if (largest != position) {
+			if (largest != position) {
 				Util.swap(this.getHeap(), position, largest);
-				heapify(largest);				
-			 }
+				heapify(largest);
+			}
 		}
 	}
 
@@ -130,7 +130,7 @@ public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
 		if (array != null) {
 			this.heap = array;
 			this.index = array.length - 1;
-			for (int i = this.index / 2; i >= 1; --i) {
+			for (int i = this.index / 2; i >= 0; i--) {
 				this.heapify(i);
 			}
 		}
@@ -149,10 +149,8 @@ public class HeapImpl<T extends Comparable<T>> implements Heap<T> {
 	@Override
 	public T rootElement() {
 		T rootElement = null;
-
 		if (!this.isEmpty()) {
 			rootElement = this.heap[0];
-
 		}
 		return rootElement;
 	}

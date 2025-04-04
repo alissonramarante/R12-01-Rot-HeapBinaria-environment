@@ -17,3 +17,13 @@
   <level>FINE</level>
   <message>File 121210685-ALISSON DOS REIS DE AMARANTE.zip was received. It was sent by ALISSON DOS REIS DE AMARANTE from IP 150.165.74.84 at 02-04-2025 09*52*28</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-04-03T23:13:05.202-0300</date>
+  <logger>ALISSON DOS REIS DE AMARANTE</logger>
+  <level>FINE</level>
+  <message>File 121210685-ALISSON DOS REIS DE AMARANTE.zip was received. It was sent by ALISSON DOS REIS DE AMARANTE from IP 192.168.1.12 at 03-04-2025 23*13*05</message>
+</record>
